@@ -1,0 +1,40 @@
+{
+  "name": "puppetproxy2",
+  "version": "1.0.0",
+  "description": "puppeteer proxy browser",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./tests/example.js",
+    "dev": "node ./index.js --env=development",
+    "build": "vite build",
+    "vite": "vite dev",
+    "icons": "node ./scripts/icons.js --env=development",
+    "tswatch": "node ./scripts/swcbuild.js",
+    "mon": "nodemon"
+  },
+  "author": "Yaroslav Minakov",
+  "license": "ISC",
+  "devDependencies": {
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.2.210",
+    "@types/minimist": "^1.2.2",
+    "@types/ws": "^8.5.3",
+    "@vitejs/plugin-react": "^1.3.2",
+    "chokidar": "^3.5.3",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "favicons": "^6.2.2",
+    "minimist": "^1.2.6",
+    "puppeteer": "^15.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.53.0",
+    "sqlite3": "^5.0.8",
+    "vite": "^2.9.13",
+    "ws": "^8.8.0"
+  },
+  "dependencies": {
+    "glob": "^8.0.3"
+  }
+}
