@@ -59,13 +59,15 @@ app.post("/auth", (req, res) => {
 
 });
 
-//@TODO delete this later (dummy nginx headers)
-app.use((req, res, next) => {
-    let hithere = req.headers["hithere"] ?? "no hi there"
-    let host = req.headers["host"] ?? "no host :("
-    console.log(["hi there", hithere, "host ?", host]);
-    next();
-});
+//@TODO delete this later (dummy middleware to read request)
+if (config.isDev) {
+    app.use((req, res, next) => {
+        // let hithere = req.headers["hithere"] ?? "no hi there header :("
+        // let host = req.headers["host"] ?? "no host :("
+        // console.log(["hi there header ?", hithere, "host ?", host]);
+        next();
+    });
+}
 
 
 if (config.isProd) {

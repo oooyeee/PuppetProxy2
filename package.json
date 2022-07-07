@@ -10,8 +10,7 @@
     "build": "vite build",
     "vite": "vite dev",
     "icons": "node ./scripts/icons.js --env=development",
-    "tswatch": "node ./scripts/swcbuild.js",
-    "mon": "nodemon"
+    "tswatch": "node ./scripts/watch_ts.js"
   },
   "author": "Yaroslav Minakov",
   "license": "ISC",

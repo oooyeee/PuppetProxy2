@@ -1,5 +1,5 @@
-import { IsAuthenticated, Login, Register } from "../lib/auth.js"
-import { users } from "../lib/Models/models.js"
+import { IsAuthenticated, Login, Register } from "../DB/auth.js"
+import { users } from "../DB/models.js"
 
 const uuid_regex = /^[-\w-]+$/g;
 const password_regex = "";
